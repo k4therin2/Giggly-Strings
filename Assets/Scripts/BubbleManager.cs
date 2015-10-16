@@ -18,9 +18,9 @@ public class BubbleManager : MonoBehaviour
 
             Vector3 currentPos = Vector3.zero;
 
-            currentPos.x += Random.Range(-1.0f, 1.0f);
-            currentPos.y += Random.Range(-1.0f, 1.0f);
-            currentPos.z += Random.Range(-1.0f, 1.0f);
+            currentPos.x += Random.Range(-3.0f, 3.0f);
+            currentPos.y += Random.Range(-3.0f, 3.0f);
+            currentPos.z += Random.Range(-3.0f, 3.0f);
 
             current.transform.position = spawnPoint.position + currentPos;
 
