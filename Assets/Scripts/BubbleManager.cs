@@ -4,7 +4,29 @@ using System.Collections;
 public class BubbleManager : MonoBehaviour
 {
 
-    public Bubble[] bubbles;
+    public Bubble[] bubblePrefabs;
+    public int numToSpawn;
+    public Transform spawnPoint;
+    private Bubble[] bubbles;
+
+    void Start()
+    {
+        bubbles = new Bubble[numToSpawn];
+        for(int i = 0; i < numToSpawn; i++)
+        {
+            Bubble current = Instantiate(bubblePrefabs[Random.Range(0, bubblePrefabs.Length)]) as Bubble;
+
+            Vector3 currentPos = Vector3.zero;
+
+            currentPos.x += Random.Range(-1.0f, 1.0f);
+            currentPos.y += Random.Range(-1.0f, 1.0f);
+            currentPos.z += Random.Range(-1.0f, 1.0f);
+
+            current.transform.position = spawnPoint.position + currentPos;
+
+            bubbles[i] = current;
+        }
+    }
 
     void Update()
     {
