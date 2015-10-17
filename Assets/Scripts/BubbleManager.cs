@@ -6,6 +6,7 @@ public class BubbleManager : MonoBehaviour
 
     public Bubble[] bubblePrefabs;
     public int numToSpawn;
+    public float radiusFromCenter = 3.0f;
     public Transform spawnPoint;
     private Bubble[] bubbles;
 
@@ -18,9 +19,9 @@ public class BubbleManager : MonoBehaviour
 
             Vector3 currentPos = Vector3.zero;
 
-            currentPos.x += Random.Range(-3.0f, 3.0f);
-            currentPos.y += Random.Range(-3.0f, 3.0f);
-            currentPos.z += Random.Range(-3.0f, 3.0f);
+            currentPos.x += Random.Range(-radiusFromCenter, radiusFromCenter);
+            currentPos.y += Random.Range(-radiusFromCenter, radiusFromCenter);
+            currentPos.z += Random.Range(-radiusFromCenter, radiusFromCenter);
 
             current.transform.position = spawnPoint.position + currentPos;
 
