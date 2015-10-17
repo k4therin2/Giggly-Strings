@@ -1,7 +1,7 @@
 # Giggly-Strings
 A virtual reality so amazing you'll never want to leave.
 
-This is side-project mostly worked on by me ([k4therin2](www.github.com/k4therin2)) and Haley ([hne3](www.github.com/hne3)) to explore Google Cardboard.
+This is a side-project mostly worked on by me ([k4therin2](www.github.com/k4therin2)) and Haley ([hne3](www.github.com/hne3)) to explore Google Cardboard.
 General idea: visualize music in VR.
 
 # Giggle the Strings
