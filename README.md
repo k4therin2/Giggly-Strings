@@ -16,3 +16,8 @@ General idea: visualize music in VR.
        * Enter your Android SDK location when prompted
   6. Profit
   
+So what can you do to help?
+ * We'd like to have a launch screen/menu
+ * We'd like to have different scenes for different songs
+ * We'd EVENTUALLY like to be able to use the Spotify API to generate visualizations for different sounds
+ * But now we're just having fun
